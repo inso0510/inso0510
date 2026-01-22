@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .container {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            max-width: 600px;
+            overflow: hidden;
+        }
+
+        .bio-header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .profile-img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 4px solid white;
+            margin: 0 auto 20px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .bio-header h1 {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+
+        .bio-header p {
+            font-size: 1.1em;
+            opacity: 0.9;
+        }
+
+        .bio-content {
+            padding: 40px;
+        }
+
+        .bio-content h2 {
+            color: #667eea;
+            margin-bottom: 15px;
+            font-size: 1.5em;
+        }
+
+        .bio-content p {
+            margin-bottom: 20px;
+            text-align: justify;
+            color: #555;
+        }
+
+        .skills {
+            margin: 30px 0;
+        }
+
+        .skills h3 {
+            color: #764ba2;
+            margin-bottom: 15px;
+        }
+
+        .skill-tag {
+            display: inline-block;
+            background: #e8eef7;
+            color: #667eea;
+            padding: 8px 15px;
+            border-radius: 20px;
+            margin: 5px 5px 5px 0;
+            font-size: 0.9em;
+        }
+
+        .social-links {
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        .social-links a {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            background: #667eea;
+            color: white;
+            border-radius: 50%;
+            line-height: 40px;
+            margin: 0 10px;
+            text-decoration: none;
+            transition: background 0.3s;
+        }
+
+        .social-links a:hover {
+            background: #764ba2;
+        }
+
+        .gallery {
+            margin-top: 40px;
+            padding-top: 40px;
+            border-top: 2px solid #e8eef7;
+        }
+
+        .gallery h2 {
+            color: #667eea;
+            margin-bottom: 25px;
+        }
+
+        .photo-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .photo-block {
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+            transition: transform 0.3s, box-shadow 0.3s;
+            cursor: pointer;
+            aspect-ratio: 1;
+        }
+
+        .photo-block:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 20px rgba(102, 126, 234, 0.3);
+        }
+
+        .photo-block img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .photo-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(102, 126, 234, 0.8);
+            opacity: 0;
+            transition: opacity 0.3s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .photo-block:hover .photo-overlay {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="bio-header">
+            <img src="Downloads/WhatsApp Image 2026-01-22 at 18.07.02 (1).jpeg" alt="Profile Picture" class="profile-img">
+            <h1>Yoyo King</h1>
+            <p>F1 - SPSLT</p>
+        </div>
+
+        <div class="bio-content">
+            <h2>About Me</h2>
+            <p>
+                Welcome to my bio! I am Yoyo King, a cuber and a 13 y/o new coder. I have a passion for solving problems 
+                and creating creative self ideas, so I love Mathematics as well. In my free time, I play Roblox and hang out with friends. I have 50 second average in 3x3 Rubiks cube. I also love collecting Kirby toys/plushies which I have over 20 of them!
+            </p>
+
+            <h2>Background</h2>
+            <p>
+                I am from Hong Kong. I am currently studying at SPSLT F1. I have a strong interest in coding and technology, and I am constantly exploring new programming languages and tools to enhance my skills. I am currently learning HTML, Lua to build web applications / Roblox games. Kirby addict! Also I love helping people out with their Maths homework.
+            </p>
+
+            <div class="skills">
+                <h3>Skills</h3>
+                <span class="skill-tag">Modeling</span>
+                <span class="skill-tag">Coding</span>
+                <span class="skill-tag">Solving Maths</span>
+                <span class="skill-tag">Solving 3x3 Rubiks Cube</span>
+                <span class="skill-tag">Translating (Chinese <-> English)</span>
+                <span class="skill-tag">Canva (Design Tool)</span>
+            </div>
+
+            <h2>What I Do (Hobby)</h2>
+            <p>
+                I do Maths, play Roblox games, solve Rubiks cubes, collect Kirby plushies, and code simple web pages and listening to music. Thanks for visiting my bio!
+            </p>
+
+            <div class="social-links">
+                <a href="https://www.instagram.com/yiuking2" title="Instagram">📷</a>
+                <a href="mailto:ki25032@spslt.edu.hk" title="Email">✉</a>
+            </div>
+        </div>
+
+            <div class="gallery">
+                <h2>Photo Gallery</h2>
+                <div class="photo-grid">
+                    <div class="photo-block">
+                        <img src="Downloads/WhatsApp Image 2026-01-22 at 18.07.21.jpeg" alt="Gallery Photo 1">
+                        <div class="photo-overlay"></div>
+                    </div>
+                    <div class="photo-block">
+                        <img src="Downloads/WhatsApp Image 2026-01-22 at 18.07.20.jpeg" alt="Gallery Photo 2">
+                        <div class="photo-overlay"></div>
+                    </div>
+                    <div class="photo-block">
+                        <img src="Downloads/WhatsApp Image 2026-01-22 at 18.07.20 (4).jpeg" alt="Gallery Photo 3">
+                        <div class="photo-overlay"></div>
+                    </div>
+                    <div class="photo-block">
+                        <img src="Downloads/WhatsApp Image 2026-01-22 at 18.07.20 (3).jpeg" alt="Gallery Photo 4">
+                        <div class="photo-overlay"></div>
+                    </div>
+                    <div class="photo-block">
+                        <img src="Downloads/WhatsApp Image 2026-01-22 at 18.07.20 (1).jpeg" alt="Gallery Photo 5">
+                        <div class="photo-overlay"></div>
+                    </div>
+                    <div class="photo-block">
+                        <img src="Downloads/WhatsApp Image 2026-01-22 at 18.07.02.jpeg" alt="Gallery Photo 6">
+                        <div class="photo-overlay"></div>
+                    </div>
+                </div>
+            </div>
+    </div>
+</body>
+</html>
