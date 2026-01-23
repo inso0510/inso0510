@@ -15,7 +15,7 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
             color: #333;
-            background: linear-gradient(135deg, #90EE90 0%, #3CB371 100%);
+            background: linear-gradient(135deg, #4169E1 0%, #00CED1 100%);
             min-height: 100vh;
             display: flex;
             align-items: center;
@@ -32,7 +32,7 @@
         }
 
         .bio-header {
-            background: linear-gradient(135deg, #90EE90 0%, #3CB371 100%);
+            background: linear-gradient(135deg, #4169E1 0%, #3CB371 100%);
             color: white;
             padding: 40px 20px;
             text-align: center;
@@ -63,7 +63,7 @@
         }
 
         .bio-content h2 {
-            color: #3CB371;
+            color: #00CED1;
             margin-bottom: 15px;
             font-size: 1.5em;
         }
@@ -79,14 +79,14 @@
         }
 
         .skills h3 {
-            color: #228B22;
+            color: #4169E1;
             margin-bottom: 15px;
         }
 
         .skill-tag {
             display: inline-block;
-            background: #E0FFE0;
-            color: #3CB371;
+            background: #E0F4FF;
+            color: #4169E1;
             padding: 8px 15px;
             border-radius: 20px;
             margin: 5px 5px 5px 0;
@@ -102,7 +102,7 @@
             display: inline-block;
             width: 40px;
             height: 40px;
-            background: #3CB371;
+            background: #00CED1;
             color: white;
             border-radius: 50%;
             line-height: 40px;
@@ -112,17 +112,17 @@
         }
 
         .social-links a:hover {
-            background: #228B22;
+            background: #4169E1;
         }
 
         .gallery {
             margin-top: 40px;
             padding-top: 40px;
-            border-top: 2px solid #E0FFE0;
+            border-top: 2px solid #E0F4FF;
         }
 
         .gallery h2 {
-            color: #3CB371;
+            color: #00CED1;
             margin-bottom: 25px;
         }
 
@@ -145,7 +145,7 @@
 
         .photo-block:hover {
             transform: scale(1.05);
-            box-shadow: 0 8px 20px rgba(60, 179, 113, 0.3);
+            box-shadow: 0 8px 20px rgba(0, 206, 209, 0.3);
         }
 
         .photo-block img {
@@ -161,7 +161,7 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background: rgba(60, 179, 113, 0.8);
+            background: rgba(0, 206, 209, 0.8);
             opacity: 0;
             transition: opacity 0.3s;
             display: flex;
@@ -176,26 +176,73 @@
         .photo-block:hover .photo-overlay {
             opacity: 1;
         }
+
+        .background-decorations {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            overflow: hidden;
+            z-index: 0;
+        }
+
+        .emoji {
+            position: absolute;
+            font-size: 2em;
+            opacity: 0.6;
+            animation: float 6s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-20px) rotate(10deg); }
+        }
+
+        .emoji:nth-child(1) { top: 10%; left: 5%; font-size: 3em; animation-delay: 0s; }
+        .emoji:nth-child(2) { top: 20%; right: 8%; font-size: 2.5em; animation-delay: 1s; }
+        .emoji:nth-child(3) { top: 60%; left: 10%; font-size: 2em; animation-delay: 2s; }
+        .emoji:nth-child(4) { top: 40%; right: 5%; font-size: 2.8em; animation-delay: 1.5s; }
+        .emoji:nth-child(5) { top: 75%; right: 15%; font-size: 2.2em; animation-delay: 0.5s; }
+        .emoji:nth-child(6) { top: 15%; left: 25%; font-size: 2.5em; animation-delay: 2.5s; }
+        .emoji:nth-child(7) { bottom: 15%; left: 50%; font-size: 2.3em; animation-delay: 1.2s; }
+        .emoji:nth-child(8) { top: 50%; right: 30%; font-size: 2em; animation-delay: 0.8s; }
+
+        .container {
+            position: relative;
+            z-index: 1;
+        }
     </style>
 </head>
 <body>
+    <div class="background-decorations">
+        <div class="emoji">🎮</div>
+        <div class="emoji">🧩</div>
+        <div class="emoji">💻</div>
+        <div class="emoji">🎨</div>
+        <div class="emoji">🧮</div>
+        <div class="emoji">🎵</div>
+        <div class="emoji">✨</div>
+        <div class="emoji">🌟</div>
+    </div>
     <div class="container">
         <div class="bio-header">
-            <img src="Downloads/WhatsApp Image 2026-01-22 at 18.07.02 (1).jpeg" alt="Profile Picture" class="profile-img">
+            <img src="https://media-hkg4-1.cdn.whatsapp.net/v/t61.24694-24/617133991_731395579730549_560393971611563171_n.jpg?ccb=11-4&oh=01_Q5Aa3gG7X0OxzZ5CwcnaDnDspTwJS3ob5rwgqk9wljrkdpYIAg&oe=6980037C&_nc_sid=5e03e0&_nc_cat=100" alt="Profile Picture" class="profile-img">
             <h1>Yoyo King</h1>
-            <p>F1 - SPSLT</p>
+            <p>F1 Student - SPSLT</p>
         </div>
 
         <div class="bio-content">
             <h2>About Me</h2>
             <p>
                 Welcome to my bio! I am Yoyo King, a cuber and a 13 y/o new coder. I have a passion for solving problems 
-                and creating creative self ideas, so I love Mathematics as well. In my free time, I play Roblox and hang out with friends. I have 50 second average in 3x3 Rubiks cube. I also love collecting Kirby toys/plushies which I have over 20 of them!
+                and creating creative self ideas, so I love Mathematics as well. In my free time, I play Roblox and hang out with friends. I have 50 second average in 3x3 Rubiks cube. I also love collecting Kirby toys/plushies which I have over 10 of them! 
             </p>
 
             <h2>Background</h2>
             <p>
-                I am from Hong Kong. I am currently studying at SPSLT F1. I have a strong interest in coding and technology, and I am constantly exploring new programming languages and tools to enhance my skills. I am currently learning HTML, Lua to build web applications / Roblox games. Kirby addict! Also I love helping people out with their Maths homework.
+                I am from Hong Kong. I am currently studying at SPSLT F1. I have a strong interest in coding and technology, and I am constantly exploring new programming languages and tools to enhance my skills. I am currently learning HTML, Lua to build web applications / Roblox games. Kirby addict! Also I love helping people out with their Maths homework. You can always ask me for Maths help!
             </p>
 
             <div class="skills">
@@ -208,14 +255,14 @@
                 <span class="skill-tag">Canva (Design Tool)</span>
             </div>
 
-            <h2>What I Do (Hobby)</h2>
+            <h2>What I Do (Hobbies)</h2>
             <p>
                 I do Maths, play Roblox games, solve Rubiks cubes, collect Kirby plushies, and code simple web pages and listening to music. Thanks for visiting my bio!
             </p>
 
             <div class="social-links">
                 <a href="https://www.instagram.com/yiuking2" title="Instagram">📷</a>
-                <a href="mailto:ki25032@spslt.edu.hk" title="Email">✉</a>
+                <a href="mailto:inso0510777@gmail.com" title="Email">✉</a>
             </div>
         </div>
 
